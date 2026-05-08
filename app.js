@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>Test Application</title>
+      <title>test-promqna</title>
       <style>
         body {
           font-family: Arial, sans-serif;
