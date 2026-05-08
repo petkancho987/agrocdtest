@@ -45,8 +45,8 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>Hello Test</h1>
-        <div class="info">ArgoCD Deployment Test</div>
+        <h1>novtest</h1>
+        <div class="info">novtest</div>
         <div class="pod-info">
           <strong>Pod:</strong> ${process.env.HOSTNAME || 'unknown'}<br>
           <strong>Node:</strong> ${process.env.NODE_NAME || 'unknown'}<br>
