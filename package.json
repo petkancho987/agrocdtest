@@ -1,0 +1,10 @@
+{
+  "name": "hello-test-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js application for ArgoCD testing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {}
+}
