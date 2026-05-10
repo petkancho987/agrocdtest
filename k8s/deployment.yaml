@@ -12,18 +12,20 @@ spec:
     metadata:
       labels:
         app: hello-test-app
-    spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - hello-test-app
-            topologyKey: kubernetes.io/hostname
-      containers:
+spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: app
+              operator: In
+              values:
+              - hello-test-app
+          topologyKey: kubernetes.io/hostname      
+containers:
       - name: hello-test-app
         image: petkancho987/hello-test-app:latest
         imagePullPolicy: Always
