@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>bbb</title>
+      <title>commit</title>
       <style>
         body {
           font-family: Arial, sans-serif;
@@ -45,8 +45,8 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>bbb</h1>
-        <div class="info">bbb</div>
+        <h1>commit</h1>
+        <div class="info">commit</div>
         <div class="pod-info">
           <strong>Pod:</strong> ${process.env.HOSTNAME || 'unknown'}<br>
           <strong>Node:</strong> ${process.env.NODE_NAME || 'unknown'}<br>
