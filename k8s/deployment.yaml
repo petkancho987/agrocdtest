@@ -25,7 +25,7 @@ spec:
             topologyKey: kubernetes.io/hostname
       containers:
       - name: hello-test-app
-        image: petkancho987/hello-test-app:latest
+        image: petkancho987/hello-test-app:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
