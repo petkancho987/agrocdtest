@@ -5,6 +5,8 @@ metadata:
   namespace: default
 spec:
   replicas: 2
+strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: hello-test-app
