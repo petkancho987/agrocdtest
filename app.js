@@ -45,8 +45,8 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>commit</h1>
-        <div class="info">commit</div>
+        <h1>zele</h1>
+        <div class="info">zele</div>
         <div class="pod-info">
           <strong>Pod:</strong> ${process.env.HOSTNAME || 'unknown'}<br>
           <strong>Node:</strong> ${process.env.NODE_NAME || 'unknown'}<br>
