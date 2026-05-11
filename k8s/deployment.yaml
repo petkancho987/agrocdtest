@@ -5,11 +5,6 @@ metadata:
   namespace: default
 spec:
   replicas: 2
-strategy:
-  type: RollingUpdate
-  rollingUpdate:
-    maxSurge: 0
-    maxUnavailable: 1
   selector:
     matchLabels:
       app: hello-test-app
@@ -20,7 +15,7 @@ strategy:
     spec:
       affinity:
         podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
+          requiredDuringSchedulingIgnoredDuringExecution:
           - labelSelector:
               matchExpressions:
               - key: app
@@ -30,7 +25,7 @@ strategy:
             topologyKey: kubernetes.io/hostname
       containers:
       - name: hello-test-app
-        image: petkancho987/hello-test-app:102
+        image: petkancho987/hello-test-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
