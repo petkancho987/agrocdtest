@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>branch-test-bbbb</title>
+      <title>new-branch-test-bbbb</title>
       <style>
         body {
           font-family: Arial, sans-serif;
@@ -45,8 +45,8 @@ const server = http.createServer((req, res) => {
     </head>
     <body>
       <div class="container">
-        <h1>branch-testbbbbbbb</h1>
-        <div class="info">brach-testbbbbbbbb</div>
+        <h1>new-branch-testbbbbbbb</h1>
+        <div class="info">new-brach-testbbbbbbbb</div>
         <div class="pod-info">
           <strong>Pod:</strong> ${process.env.HOSTNAME || 'unknown'}<br>
           <strong>Node:</strong> ${process.env.NODE_NAME || 'unknown'}<br>
