@@ -3,8 +3,16 @@ kind: Deployment
 metadata:
   name: hello-test-app
   namespace: default
+
 spec:
   replicas: 2
+
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+
   selector:
     matchLabels:
       app: hello-test-app
